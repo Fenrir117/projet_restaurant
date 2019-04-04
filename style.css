@@ -6,7 +6,7 @@
 a {
   text-decoration: none;
   color: inherit;
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
   font-weight: 700;
 }
 
@@ -18,14 +18,14 @@ h1 {
   font-size: 90px;
   color: white;
   text-align: center;
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
 }
 
 header {
   background-image: url(images/background_header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 850px;
 }
 
 header nav {
@@ -63,7 +63,7 @@ header nav ul a:hover {
 }
 
 header #txtHeader {
-  padding: 230px 20% 140px 20%;
+  padding: 200px 20% 140px 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +77,7 @@ header #txtHeader {
 }
 
 header #txtHeader img {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 header #txtHeader #button_header .button {
@@ -86,7 +86,7 @@ header #txtHeader #button_header .button {
   border: 1px black solid;
   font-size: 18px;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 header #txtHeader #button_header .white {
@@ -100,10 +100,39 @@ header #txtHeader #button_header .black {
   margin-right: 15px;
 }
 
-section {
+.about {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 710px;
+  height: 750px;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.about .container .cuisinier {
+  text-align: center;
+  margin: auto 0;
+}
+
+.about .container .cuisinier h2 {
+  color: #d2a818;
+}
+
+.about .container .cuisinier .divider {
+  margin: 30px 0;
+}
+
+.about .container .cuisinier p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-family: "lato", "sans-serif";
 }
 /*# sourceMappingURL=style.css.map */

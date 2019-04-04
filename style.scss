@@ -1,97 +1,126 @@
 // Regles général
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    font-family: 'Gentium Book Basic', serif;
-    font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 700;
 }
 
+$gold: rgb(210, 168, 24);
+
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h1 {
-    font-size: 90px;
-    color: white;
-    text-align: center;
-    font-family: 'Yeseva One', cursive;
+  font-size: 90px;
+  color: white;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
 }
+
+
+
 
 // header
 header {
-    background-image: url(images/background_header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 750px;
+  background-image: url(images/background_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 850px;
 
-    nav {
-        width: 80%;
-        margin: 15px 10%;
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
+  nav {
+    width: 80%;
+    margin: 15px 10%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
 
-        .logo {
-            width: 30%;
-        }
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            color: white;
-            width: 70%;
-            font-size: 21px;
-
-            a:hover{
-                border-top: 2px rgb(218, 179, 62) solid;
-
-            }
-        }
-      
+    .logo {
+      width: 30%;
     }
 
-    #txtHeader {
-        padding: 230px 20% 140px 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      width: 70%;
+      font-size: 21px;
 
-        img {
-            margin: 40px 0;
-        }
-
-        #button_header {
-            .button {
-                width: 228px;
-                height: 58px;
-                border: 1px black solid;
-                font-size: 18px;
-                color: white;
-                font-family: 'Lato', sans-serif;
-            }
-
-            .white{
-                border-color: white;
-                background-color: rgba(255, 255, 255, 0.4);
-                margin-left: 15px;
-            }
-            .black{
-                background-color: rgba(0, 0, 0, 0.4);
-                margin-right: 15px;
-            }
-        }
+      a:hover {
+        border-top: 2px rgb(218, 179, 62) solid;
+      }
     }
-} 
+  }
 
-section {
-    background-image: url(images/Background_blanc.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 710px;
+  #txtHeader {
+    padding: 200px 20% 140px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin: 30px 0;
+    }
+
+    #button_header {
+      .button {
+        width: 228px;
+        height: 58px;
+        border: 1px black solid;
+        font-size: 18px;
+        color: white;
+        font-family: "Lato", sans-serif;
+      }
+
+      .white {
+        border-color: white;
+        background-color: rgba(255, 255, 255, 0.4);
+        margin-left: 15px;
+      }
+      .black {
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.about {
+  background-image: url(images/Background_blanc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  
+      .cuisinier {
+        text-align: center;
+        margin: auto 0;
+
+        h2{
+            color: $gold;
+        }
+
+        .divider {
+            margin: 30px 0;
+        }
+
+        p{
+            margin-bottom: 40px; 
+            font-size: 16px;
+            font-family: "lato", "sans-serif";
+        }
+
+      }
+    }
 }

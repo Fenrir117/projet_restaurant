@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <title>Titre de la page</title>
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -51,23 +52,34 @@
             </div>
         </div>
     </header>
-    <section>
-        <div id="cuisiner">
-            <h2>Just the right food</h2>
-            <img src="images/divider5.png" alt="image d'une décoration" width="247" height="24">
-            <p>
-                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
-                customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,
-                muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-            </p>
-            <img src="images/cuisinier.jpg" alt="photo d'un cuisiner en train de préparer à manger accompagné de 
+
+    <section class="about container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="cuisinier col-lg-6">
+                    <h2>Just the right food</h2>
+                    <img class="divider" src="images/divider_gold.png" alt="image d'une décoration" width="247" height="24">
+                    <p class="col-lg-10 offset-lg-1">
+                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                        customers coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                        cakes,
+                        muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                    </p>
+                    <img class="col-lg-6 offset-lg-2" src="images/cuisinier.png" alt="photo d'un cuisiner en train de préparer à manger accompagné de 
             sa signature accolé à la photo" width="219" height="221">
-        </div>
-        <div id="assiette">
-            <img src="images/assiette.png" alt="photo d'une assiette avec un plat cuisiné vue du dessus" width="621"
-                height="625">
+                </div>
+                <div class="assiette col-lg-6">
+                    <img src="images/assiette.png" alt="photo d'une assiette avec un plat cuisiné vue du dessus"
+                        width="621" height="625">
+
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
