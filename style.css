@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 90px;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-image: url(images/background_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 10%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  width: 30%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 70%;
+}
+
+header nav ul a:hover {
+  border-top: 2px #dab33e solid;
+}
+
+header #txtHeader {
+  padding: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  background-image: url(images/Background_blanc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 710px;
+}
+/*# sourceMappingURL=style.css.map */
