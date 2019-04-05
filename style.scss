@@ -24,6 +24,11 @@ h1 {
   font-family: "Yeseva One", cursive;
 }
 
+h2 {
+  font-size: 36px;
+  font-family: "Yeseva One", cursive;
+}
+
 // header
 header {
   background-image: url(images/background_header.jpg);
@@ -153,6 +158,45 @@ header {
       .col-lg-10 {
         display: flex;
         justify-content: space-around;
+      }
+    }
+  }
+}
+
+.menu {
+  background-image: url(images/background_menu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+.reviews {
+  background-image: url(images/background_plat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .cadre_reviews {
+      background-color: rgba(50, 50, 50, 0.6);
+      padding: 80px 0 100px 0;
+      text-align: center;
+      color: white;
+
+      img {
+        margin: 30px 0;
+      }
+
+      p {
+        font-size: 25px;
+        font-family: "Gentium Book Basic", serif;
+      }
+      span {
+        font-size: 18px;
+        font-family: "lato", "sans-serif";
       }
     }
   }
