@@ -227,4 +227,38 @@ header #txtHeader #button_header .black {
   font-size: 18px;
   font-family: "lato", "sans-serif";
 }
+
+.reservation {
+  background-image: url(images/Background_blanc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.reservation .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation .container .cadre_reservation {
+  height: 500px;
+  text-align: center;
+}
+
+.reservation .container .cadre_reservation .txt_reservation {
+  height: 60%;
+}
+
+.reservation .container .cadre_reservation .txt_reservation h2 {
+  color: #d2a818;
+}
+
+.reservation .container .cadre_reservation .form_reservation {
+  height: 40%;
+}
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@
         <!-- Navbar avec le logo dans celle-ci -->
         <nav>
             <div id="logo">
-                <img src="images/logo.png" alt="image du logo du restaurant" width="156" height="92">
+                <img class="img-fluid" src="images/logo.png" alt="image du logo du restaurant" width="156" height="92">
             </div>
             <ul>
                 <a href="#">
@@ -43,7 +43,7 @@
         <!-- Texte header avec les bouton et le h1 -->
         <div id="txtHeader">
             <h1>the right ingredients for the right food</h1>
-            <img src="images/divider_header.png" alt="image d'une décoration" width="232" height="43">
+            <img class="img-fluid" src="images/divider_header.png" alt="image d'une décoration" width="232" height="43">
 
             <div id="button_header">
                 <button class="black button">
@@ -63,7 +63,7 @@
                 <!-- Div avec la signature du cuisiner  -->
                 <div class="cuisinier col-lg-6">
                     <h2>Just the right food</h2>
-                    <img class="divider" src="images/divider_gold.png"
+                    <img class="divider img-fluid" src="images/divider_gold.png"
                         alt="image d'une décoration pour séparer des elements de la page" width="247" height="24">
                     <p class="col-lg-10 offset-lg-1">
                         If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
@@ -71,13 +71,13 @@
                         cakes,
                         muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
                     </p>
-                    <img class="col-lg-6 offset-lg-2" src="images/cuisinier.png" alt="photo d'un cuisiner en train de préparer à manger accompagné de 
+                    <img class="col-lg-6 offset-lg-2 img-fluid" src="images/cuisinier.png" alt="photo d'un cuisiner en train de préparer à manger accompagné de 
             sa signature accolé à la photo" width="219" height="221">
                 </div>
                 <!-- Div avec l'assiette du chef -->
                 <div class="assiette col-lg-6">
-                    <img src="images/assiette.png" alt="photo d'une assiette avec un plat cuisiné vue du dessus"
-                        width="621" height="625">
+                    <img class="img-fluid" src="images/assiette.png"
+                        alt="photo d'une assiette avec un plat cuisiné vue du dessus" width="621" height="625">
 
                 </div>
             </div>
@@ -89,7 +89,8 @@
             <div class="cadre_ingredient col-lg-6 offset-lg-6">
                 <div class="txt_ingredient ">
                     <h2>Fine ingredients</h2>
-                    <img src="images/divider5.png" alt="image d'une décoration pour séparer des elements de la page">
+                    <img class="img-fluid" src="images/divider5.png"
+                        alt="image d'une décoration pour séparer des elements de la page">
                     <p class="col-lg-8 offset-lg-2">If you’ve been to one of our restaurants, you’ve seen – and tasted –
                         what keeps
                         our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda
@@ -98,9 +99,9 @@
                     </p>
                 </div>
                 <div class=" container col-lg-10">
-                    <img src="images/rond_1.png" alt="Photo d'ingredients pour la cuisine">
-                    <img src="images/rond_2.png" alt="Photo d'ingredients pour la cuisine">
-                    <img src="images/rond_3.png" alt="Photo d'ingredients pour la cuisine">
+                    <img class="img-fluid" src="images/rond_1.png" alt="Photo d'ingredients pour la cuisine">
+                    <img class="img-fluid" src="images/rond_2.png" alt="Photo d'ingredients pour la cuisine">
+                    <img class="img-fluid" src="images/rond_3.png" alt="Photo d'ingredients pour la cuisine">
                 </div>
             </div>
         </div>
@@ -120,7 +121,8 @@
         <div class="container">
             <div class="cadre_reviews col-lg-8 offset-lg-2">
                 <h2>Guest reviews</h2>
-                <img src="images/divider5.png" alt="image d'une décoration pour séparer des elements de la page">
+                <img class="img-fluid" src="images/divider5.png"
+                    alt="image d'une décoration pour séparer des elements de la page">
 
                 <p class="col-lg-10 offset-lg-1">
                     If you’ve been to one of our restaurants, you’ve seen – and tasted –
@@ -131,6 +133,55 @@
                 <span> - food inc, New York</span>
 
 
+            </div>
+        </div>
+
+    </section>
+
+    <section class="reservation container-fluid">
+        <div class="container">
+            <div class="row">
+
+                <img class="col-lg-3 img-fluid" src="images/image_reservation.jpg" alt="photo d'un plat salé">
+                <img class="col-lg-3 img-fluid" src="images/image_reservation_2.jpg" alt="photo d'un plat sucré">
+
+                <div class="offset-lg-1 col-lg-4 cadre_reservation d-flex flex-column justify-content-around">
+                    <div class="txt_reservation d-flex flex-column justify-content-between">
+                        <h2>Just the right food</h2>
+                        <img class="img-fluid" src="images/divider_gold.png"
+                        alt="image d'une décoration pour séparer des elements de la page">
+                        <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
+                            coming back for more.
+                            Perfect materials and freshly baked food.
+                            Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist!
+                            Stop in today and check us out!
+                            Perfect materials and freshly baked food.
+                        </p>
+                    </div>
+                    <div class="form_reservation d-flex flex-column justify-content-around">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </form>  <button>
+                                Book now!
+                            </button> 
+                    </div>
+                </div>
             </div>
         </div>
 

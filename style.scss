@@ -201,3 +201,31 @@ header {
     }
   }
 }
+.reservation {
+  background-image: url(images/Background_blanc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  .container {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .cadre_reservation {
+      height: 500px;
+      text-align: center;
+.txt_reservation{
+
+  height: 60%;
+h2{
+  color: $gold;
+}
+}
+
+.form_reservation {
+  height: 40%;
+}
+
+    }
+  }
+}
