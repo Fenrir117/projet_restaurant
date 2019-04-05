@@ -108,13 +108,13 @@ header #txtHeader #button_header .black {
 }
 
 .about .container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 .about .container .cuisinier {
@@ -134,5 +134,47 @@ header #txtHeader #button_header .black {
   margin-bottom: 40px;
   font-size: 16px;
   font-family: "lato", "sans-serif";
+}
+
+.ingredient {
+  background-image: url(images/background_ingredient.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.ingredient .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ingredient .container .cadre_ingredient {
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+.ingredient .container .cadre_ingredient .txt_ingredient p {
+  font-size: 16px;
+  font-family: "lato", "sans-serif";
+  margin-bottom: 80px;
+}
+
+.ingredient .container .cadre_ingredient .txt_ingredient img {
+  margin: 30px 0;
+}
+
+.ingredient .container .cadre_ingredient .col-lg-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */
