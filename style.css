@@ -14,6 +14,10 @@ li {
   list-style-type: none;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 90px;
   color: white;
@@ -34,37 +38,25 @@ header {
 }
 
 header nav {
-  width: 80%;
-  margin: 15px 10%;
+  padding: 15px 0;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header nav .logo {
-  width: 30%;
+  background-image: url(images/back_nav.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
-  width: 70%;
   font-size: 21px;
 }
 
 header nav ul a:hover {
   border-top: 2px #dab33e solid;
+}
+
+header nav ul i {
+  font-size: 18px;
+  color: #d2a818;
 }
 
 header #txtHeader {
@@ -260,5 +252,22 @@ header #txtHeader #button_header .black {
 
 .reservation .container .cadre_reservation .form_reservation {
   height: 40%;
+}
+
+footer {
+  background-color: #191919;
+  height: 320px;
+  text-align: center;
+  color: white;
+}
+
+footer .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

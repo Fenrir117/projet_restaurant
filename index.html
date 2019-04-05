@@ -7,7 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,11 +18,13 @@
     <header>
 
         <!-- Navbar avec le logo dans celle-ci -->
-        <nav>
-            <div id="logo">
+        <nav class="container-fluid">
+            <div class="container">
+                <div class="row">
+            <div class="logo col-lg-2">
                 <img class="img-fluid" src="images/logo.png" alt="image du logo du restaurant" width="156" height="92">
             </div>
-            <ul>
+            <ul class="d-flex justify-content-around align-items-center  offset-lg-1 col-lg-9">
                 <a href="#">
                     <li>Home</li>
                 </a>
@@ -38,7 +43,17 @@
                 <a href="#">
                     <li>Reservations</li>
                 </a>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
             </ul>
+            <!-- <ul class="logo_sociaux col-lg-1 d-flex justify-content-around">
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+            </ul> -->
+            </div>
+            </div>
         </nav>
         <!-- Texte header avec les bouton et le h1 -->
         <div id="txtHeader">
@@ -149,7 +164,7 @@
                     <div class="txt_reservation d-flex flex-column justify-content-between">
                         <h2>Just the right food</h2>
                         <img class="img-fluid" src="images/divider_gold.png"
-                        alt="image d'une décoration pour séparer des elements de la page">
+                            alt="image d'une décoration pour séparer des elements de la page">
                         <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
                             coming back for more.
                             Perfect materials and freshly baked food.
@@ -176,16 +191,53 @@
                                     </div>
                                 </div>
                             </div>
-                         
-                        </form>  <button>
-                                Book now!
-                            </button> 
+
+                        </form> <button>
+                            Book now!
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="about_us col-lg-4">
+                    <h3>About Us</h3>
+                    <img class="img-fluid" src="images/divider_silver.png"
+                        alt="image d'une décoration pour séparer des elements de la page">
+                    <p>
+                        Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie,
+                        featuring breakfasts of fresh croissants and steaming bowls of café.
+                        Lamda the best restaurant in town
+                    </p>
+
+                </div>
+                <div class="openning offset-lg-1 col-lg-2">
+                    <h3>Openning Hours</h3>
+                    <img class="img-fluid" src="images/divider_silver.png"
+                        alt="image d'une décoration pour séparer des elements de la page">
+                    <p>
+                        Mon-Thu: 7:00am-8:00pm
+                        Fri-Sun: 7:00am-10:00pm
+                    </p>
+                </div>
+                <div class="location offset-lg-2 col-lg-2">
+                    <h3>Our Location</h3>
+                    <img class="img-fluid" src="images/divider_silver.png"
+                        alt="image d'une décoration pour séparer des elements de la page">
+                    <p>
+                        19th Paradise Street Sitia
+                        128 Meserole Avenue
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
