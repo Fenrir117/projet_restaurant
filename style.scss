@@ -11,13 +11,18 @@ a {
   font-weight: 700;
 }
 
+svg {
+  width: 242px;
+  margin: auto;
+}
+
 $gold: rgb(210, 168, 24);
 
 li {
   list-style-type: none;
 }
 
-ul{
+ul {
   margin-bottom: 0;
 }
 
@@ -26,6 +31,9 @@ h1 {
   color: white;
   text-align: center;
   font-family: "Yeseva One", cursive;
+  @media only screen and (max-width: 991px) {
+    font-size: 60px;
+  }
 }
 
 h2 {
@@ -38,31 +46,38 @@ header {
   background-image: url(images/background_header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 850px;
+  background-position: top right;
 
   nav {
-
     padding: 15px 0;
     position: fixed;
- 
+    z-index: 5;
     background-image: url(images/back_nav.png);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: space-around !important;
+
+    .icon-navbar {
+      color: white;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
 
     ul {
-      color: white;
       font-size: 21px;
+      align-items: flex-end;
 
       a:hover {
         border-top: 2px rgb(218, 179, 62) solid;
       }
-    
 
-    i {
-      font-size: 18px;
-      color: $gold;
+      i {
+        font-size: 18px;
+        color: $gold;
+      }
     }
-  }
   }
 
   #txtHeader {
@@ -102,29 +117,65 @@ header {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 
   .container {
     height: 100%;
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: 991px) {
+      background-image: url(images/assiette.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
     .cuisinier {
       text-align: center;
       margin: auto 0;
+      @media only screen and (max-width: 991px) {
+        background-color: rgba(218, 179, 62, 0.8);
+        padding: 50px 0;
+      }
+
+      .divider_991 {
+        margin: 30px;
+      }
 
       h2 {
         color: $gold;
+
+        @media only screen and (max-width: 991px) {
+          color: white;
+        }
       }
 
-      .divider {
-        margin: 30px 0;
+      @media only screen and (max-width: 991px) {
+        svg {
+          display: none;
+        }
       }
 
       p {
         margin-bottom: 40px;
         font-size: 16px;
         font-family: "lato", "sans-serif";
+
+        @media only screen and (max-width: 991px) {
+          color: white;
+        }
+      }
+
+      .signature {
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+
+    .assiette {
+      @media only screen and (max-width: 991px) {
+        display: none;
       }
     }
   }
@@ -134,7 +185,7 @@ header {
   background-image: url(images/background_ingredient.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 
   .container {
     height: 100%;
@@ -171,13 +222,13 @@ header {
   background-image: url(images/background_menu.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 .reviews {
   background-image: url(images/background_plat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 
   .container {
     height: 100%;
@@ -209,43 +260,105 @@ header {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
-  .container {
+  padding: 100px;
 
+  .container {
     height: 100%;
+    width: auto;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      margin: 50px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      .image_reservation {
+        display: none;
+      }
+    }
+
     .cadre_reservation {
-      height: 500px;
-      text-align: center;
-.txt_reservation{
+  
 
-  height: 60%;
-h2{
-  color: $gold;
-}
+      .txt_reservation {
+
+        text-align: center;
+        @media only screen and (max-width: 991px) {
+          margin-top: 80px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 0px;
+        }
+        h2 {
+          color: $gold;
+        }
+      }
+
+      .form_reservation {
+
+
+.input-group {
+  display: block;
 }
 
-.form_reservation {
-  height: 40%;
+.form-control{
+  width: 100%;
+  position: relative;
+}
+
+.input-group-text{
+  position: absolute;
+  right: 10px;
+  padding: 0;
+  border: none;
+  top: 35px;
+}
+
+        label {
+          margin: inherit;
+          font-size: 14px;
+          font-style: italic;
+          color: $gold;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        select{
+          width: 100%;
+          height: 38px;
+          border: 1px solid #ced4da;
+          color: #495057;
+          padding: 6px 10px;
+        }
+
+        input:focus{
+          border-color: $gold;
+          box-shadow: none;
+        }
+      }
+button{
+  width: 100%;
+  background-color: $gold;
+  border: none;
+  color: white;
+  padding: 6px 12px;
 }
 
     }
   }
-
 }
-
 
 footer {
   background-color: rgb(25, 25, 25);
-  height: 320px;
+  padding: 100px 0;
   text-align: center;
   color: white;
 
-  .container{
+  .container {
     height: 100%;
     display: flex;
     align-items: center;
   }
-
 }

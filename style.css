@@ -10,6 +10,11 @@ a {
   font-weight: 700;
 }
 
+svg {
+  width: 242px;
+  margin: auto;
+}
+
 li {
   list-style-type: none;
 }
@@ -25,6 +30,12 @@ h1 {
   font-family: "Yeseva One", cursive;
 }
 
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
 h2 {
   font-size: 36px;
   font-family: "Yeseva One", cursive;
@@ -34,20 +45,33 @@ header {
   background-image: url(images/background_header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 850px;
+  background-position: top right;
 }
 
 header nav {
   padding: 15px 0;
   position: fixed;
+  z-index: 5;
   background-image: url(images/back_nav.png);
   background-size: cover;
   background-repeat: no-repeat;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+header nav .icon-navbar {
+  color: white;
+}
+
+header nav .nav-link {
+  color: white !important;
 }
 
 header nav ul {
-  color: white;
   font-size: 21px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 header nav ul a:hover {
@@ -101,7 +125,7 @@ header #txtHeader #button_header .black {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 
 .about .container {
@@ -114,17 +138,44 @@ header #txtHeader #button_header .black {
           align-items: center;
 }
 
+@media only screen and (max-width: 991px) {
+  .about .container {
+    background-image: url(images/assiette.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 .about .container .cuisinier {
   text-align: center;
   margin: auto 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .about .container .cuisinier {
+    background-color: rgba(218, 179, 62, 0.8);
+    padding: 50px 0;
+  }
+}
+
+.about .container .cuisinier .divider_991 {
+  margin: 30px;
 }
 
 .about .container .cuisinier h2 {
   color: #d2a818;
 }
 
-.about .container .cuisinier .divider {
-  margin: 30px 0;
+@media only screen and (max-width: 991px) {
+  .about .container .cuisinier h2 {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about .container .cuisinier svg {
+    display: none;
+  }
 }
 
 .about .container .cuisinier p {
@@ -133,11 +184,29 @@ header #txtHeader #button_header .black {
   font-family: "lato", "sans-serif";
 }
 
+@media only screen and (max-width: 991px) {
+  .about .container .cuisinier p {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .container .cuisinier .signature {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about .container .assiette {
+    display: none;
+  }
+}
+
 .ingredient {
   background-image: url(images/background_ingredient.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 
 .ingredient .container {
@@ -179,14 +248,14 @@ header #txtHeader #button_header .black {
   background-image: url(images/background_menu.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 
 .reviews {
   background-image: url(images/background_plat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 
 .reviews .container {
@@ -224,11 +293,12 @@ header #txtHeader #button_header .black {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 750px;
+  padding: 100px;
 }
 
 .reservation .container {
   height: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,26 +307,89 @@ header #txtHeader #button_header .black {
           align-items: center;
 }
 
-.reservation .container .cadre_reservation {
-  height: 500px;
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  .reservation .container {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservation .container .image_reservation {
+    display: none;
+  }
 }
 
 .reservation .container .cadre_reservation .txt_reservation {
-  height: 60%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .reservation .container .cadre_reservation .txt_reservation {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reservation .container .cadre_reservation .txt_reservation {
+    margin-top: 0px;
+  }
 }
 
 .reservation .container .cadre_reservation .txt_reservation h2 {
   color: #d2a818;
 }
 
-.reservation .container .cadre_reservation .form_reservation {
-  height: 40%;
+.reservation .container .cadre_reservation .form_reservation .input-group {
+  display: block;
+}
+
+.reservation .container .cadre_reservation .form_reservation .form-control {
+  width: 100%;
+  position: relative;
+}
+
+.reservation .container .cadre_reservation .form_reservation .input-group-text {
+  position: absolute;
+  right: 10px;
+  padding: 0;
+  border: none;
+  top: 35px;
+}
+
+.reservation .container .cadre_reservation .form_reservation label {
+  margin: inherit;
+  font-size: 14px;
+  font-style: italic;
+  color: #d2a818;
+  font-weight: bold;
+  text-align: left;
+}
+
+.reservation .container .cadre_reservation .form_reservation select {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #ced4da;
+  color: #495057;
+  padding: 6px 10px;
+}
+
+.reservation .container .cadre_reservation .form_reservation input:focus {
+  border-color: #d2a818;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.reservation .container .cadre_reservation button {
+  width: 100%;
+  background-color: #d2a818;
+  border: none;
+  color: white;
+  padding: 6px 12px;
 }
 
 footer {
   background-color: #191919;
-  height: 320px;
+  padding: 100px 0;
   text-align: center;
   color: white;
 }
