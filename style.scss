@@ -34,6 +34,9 @@ h1 {
   @media only screen and (max-width: 991px) {
     font-size: 60px;
   }
+  @media only screen and (max-width: 575px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -47,9 +50,10 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
+  background-attachment: fixed;
 
   nav {
-    padding: 15px 0;
+    padding: 0;
     position: fixed;
     z-index: 5;
     background-image: url(images/back_nav.png);
@@ -63,21 +67,34 @@ header {
 
     .nav-link {
       color: white !important;
+      padding: 34px 15px;
+      @media only screen and (max-width: 991px) {
+        padding: 3px;
+      }
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      border-top: 2px white solid;
     }
 
     ul {
       font-size: 21px;
       align-items: flex-end;
 
-      a:hover {
-        border-top: 2px rgb(218, 179, 62) solid;
-      }
-
       i {
         font-size: 18px;
         color: $gold;
+
+        @media only screen and (max-width: 991px) {
+          color: white;
+        }
       }
     }
+  }
+
+  .navbar {
+    padding: 0;
   }
 
   #txtHeader {
@@ -85,29 +102,58 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 575px) {
+      padding: 50px 5%;
+    }
 
     img {
       margin: 30px 0;
     }
 
-    #button_header {
-      .button {
-        width: 228px;
-        height: 58px;
-        border: 1px black solid;
+    .button_header {
+      .row {
+        @media only screen and (max-width: 1024px) {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
         font-size: 18px;
         color: white;
         font-family: "Lato", sans-serif;
+
+        @media only screen and (max-width: 1150px) {
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 575px) {
+          font-size: 11px;
+        }
       }
 
       .white {
+        width: 100%;
+        height: 58px;
         border-color: white;
         background-color: rgba(255, 255, 255, 0.4);
         margin-left: 15px;
+        @media only screen and (max-width: 1150px) {
+          margin: 15px;
+        }
       }
       .black {
+        width: 100%;
+        height: 58px;
+        border: 1px black solid;
         background-color: rgba(0, 0, 0, 0.4);
         margin-right: 15px;
+        @media only screen and (max-width: 1150px) {
+          margin: 15px;
+        }
       }
     }
   }
@@ -117,7 +163,11 @@ header {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+  @media only screen and (max-width: 575px) {
+    padding: 50px 5%;
+  }
 
   .container {
     height: 100%;
@@ -128,6 +178,7 @@ header {
       background-image: url(images/assiette.jpg);
       background-position: center;
       background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .cuisinier {
@@ -185,7 +236,11 @@ header {
   background-image: url(images/background_ingredient.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+  @media only screen and (max-width: 575px) {
+    padding: 50px 5%;
+  }
 
   .container {
     height: 100%;
@@ -201,7 +256,7 @@ header {
       .txt_ingredient {
         p {
           font-size: 16px;
-          font-family: "lato", "sans-serif";
+          font-family: "lato", sans-serif;
           margin-bottom: 80px;
         }
 
@@ -213,6 +268,9 @@ header {
       .col-lg-10 {
         display: flex;
         justify-content: space-around;
+        @media only screen and (max-width: 575px) {
+          flex-direction: column;
+        }
       }
     }
   }
@@ -228,7 +286,11 @@ header {
   background-image: url(images/background_plat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+  @media only screen and (max-width: 575px) {
+    padding: 50px 5%;
+  }
 
   .container {
     height: 100%;
@@ -249,6 +311,24 @@ header {
         font-size: 25px;
         font-family: "Gentium Book Basic", serif;
       }
+
+      p:before {
+        content:url(images/quote.png);
+        position: absolute;
+        left: -30px;
+        top: -15px;
+        @media only screen and (max-width: 1024px) {
+          left: 10px;
+        }
+
+        @media only screen and (max-width: 991px) {
+          left: 5px;
+        }
+        @media only screen and (max-width: 768px) {
+         top: -25px;
+        }
+
+      }
       span {
         font-size: 18px;
         font-family: "lato", "sans-serif";
@@ -261,6 +341,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px;
+  @media only screen and (max-width: 575px) {
+    padding: 50px 5%;
+  }
 
   .container {
     height: 100%;
@@ -272,17 +355,14 @@ header {
       margin: 50px auto;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       .image_reservation {
         display: none;
       }
     }
 
     .cadre_reservation {
-  
-
       .txt_reservation {
-
         text-align: center;
         @media only screen and (max-width: 991px) {
           margin-top: 80px;
@@ -297,24 +377,26 @@ header {
       }
 
       .form_reservation {
+        .row {
+          width: 100%;
+        }
 
+        .input-group {
+          display: block;
+        }
 
-.input-group {
-  display: block;
-}
+        .form-control {
+          width: 100%;
+          position: relative;
+        }
 
-.form-control{
-  width: 100%;
-  position: relative;
-}
-
-.input-group-text{
-  position: absolute;
-  right: 10px;
-  padding: 0;
-  border: none;
-  top: 35px;
-}
+        .input-group-text {
+          position: absolute;
+          right: 10px;
+          padding: 0;
+          border: none;
+          top: 35px;
+        }
 
         label {
           margin: inherit;
@@ -325,7 +407,7 @@ header {
           text-align: left;
         }
 
-        select{
+        select {
           width: 100%;
           height: 38px;
           border: 1px solid #ced4da;
@@ -333,32 +415,79 @@ header {
           padding: 6px 10px;
         }
 
-        input:focus{
+        input:focus {
           border-color: $gold;
           box-shadow: none;
         }
       }
-button{
-  width: 100%;
-  background-color: $gold;
-  border: none;
-  color: white;
-  padding: 6px 12px;
-}
-
+      button {
+        width: 100%;
+        margin-top: 30px;
+        background-color: $gold;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+      }
     }
   }
 }
 
 footer {
   background-color: rgb(25, 25, 25);
-  padding: 100px 0;
+  // padding: 100px 0;
   text-align: center;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+font-size: 16px;
 
+i{
+  padding: 0 10px;
+}
+
+span {
+  font-weight: 900;
+}
   .container {
     height: 100%;
     display: flex;
     align-items: center;
+
+    .colonne{
+     margin-top: 50px;
+     margin-bottom: 50px;
+    }
+
+    .about_us{
+      p{
+        margin: 0;
+      }
+    }
+
+    .center {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .payement {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 900;
+
+
+      .social_footer {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+      }
+    }
   }
 }

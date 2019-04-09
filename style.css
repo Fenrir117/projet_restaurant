@@ -36,6 +36,12 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 h2 {
   font-size: 36px;
   font-family: "Yeseva One", cursive;
@@ -46,10 +52,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
+  background-attachment: fixed;
 }
 
 header nav {
-  padding: 15px 0;
+  padding: 0;
   position: fixed;
   z-index: 5;
   background-image: url(images/back_nav.png);
@@ -65,6 +72,18 @@ header nav .icon-navbar {
 
 header nav .nav-link {
   color: white !important;
+  padding: 34px 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  header nav .nav-link {
+    padding: 3px;
+  }
+}
+
+header nav .nav-link:hover {
+  color: white !important;
+  border-top: 2px white solid;
 }
 
 header nav ul {
@@ -74,13 +93,19 @@ header nav ul {
           align-items: flex-end;
 }
 
-header nav ul a:hover {
-  border-top: 2px #dab33e solid;
-}
-
 header nav ul i {
   font-size: 18px;
   color: #d2a818;
+}
+
+@media only screen and (max-width: 991px) {
+  header nav ul i {
+    color: white;
+  }
+}
+
+header .navbar {
+  padding: 0;
 }
 
 header #txtHeader {
@@ -97,35 +122,90 @@ header #txtHeader {
           align-items: center;
 }
 
+@media only screen and (max-width: 575px) {
+  header #txtHeader {
+    padding: 50px 5%;
+  }
+}
+
 header #txtHeader img {
   margin: 30px 0;
 }
 
-header #txtHeader #button_header .button {
-  width: 228px;
-  height: 58px;
-  border: 1px black solid;
+@media only screen and (max-width: 1024px) {
+  header #txtHeader .button_header .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header #txtHeader .button_header button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
   font-size: 18px;
   color: white;
   font-family: "Lato", sans-serif;
 }
 
-header #txtHeader #button_header .white {
+@media only screen and (max-width: 1150px) {
+  header #txtHeader .button_header button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header #txtHeader .button_header button {
+    font-size: 11px;
+  }
+}
+
+header #txtHeader .button_header .white {
+  width: 100%;
+  height: 58px;
   border-color: white;
   background-color: rgba(255, 255, 255, 0.4);
   margin-left: 15px;
 }
 
-header #txtHeader #button_header .black {
+@media only screen and (max-width: 1150px) {
+  header #txtHeader .button_header .white {
+    margin: 15px;
+  }
+}
+
+header #txtHeader .button_header .black {
+  width: 100%;
+  height: 58px;
+  border: 1px black solid;
   background-color: rgba(0, 0, 0, 0.4);
   margin-right: 15px;
+}
+
+@media only screen and (max-width: 1150px) {
+  header #txtHeader .button_header .black {
+    margin: 15px;
+  }
 }
 
 .about {
   background-image: url(images/Background_blanc.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+}
+
+@media only screen and (max-width: 575px) {
+  .about {
+    padding: 50px 5%;
+  }
 }
 
 .about .container {
@@ -143,6 +223,7 @@ header #txtHeader #button_header .black {
     background-image: url(images/assiette.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -206,7 +287,14 @@ header #txtHeader #button_header .black {
   background-image: url(images/background_ingredient.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+}
+
+@media only screen and (max-width: 575px) {
+  .ingredient {
+    padding: 50px 5%;
+  }
 }
 
 .ingredient .container {
@@ -228,7 +316,7 @@ header #txtHeader #button_header .black {
 
 .ingredient .container .cadre_ingredient .txt_ingredient p {
   font-size: 16px;
-  font-family: "lato", "sans-serif";
+  font-family: "lato", sans-serif;
   margin-bottom: 80px;
 }
 
@@ -244,6 +332,15 @@ header #txtHeader #button_header .black {
       justify-content: space-around;
 }
 
+@media only screen and (max-width: 575px) {
+  .ingredient .container .cadre_ingredient .col-lg-10 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .menu {
   background-image: url(images/background_menu.png);
   background-size: cover;
@@ -255,7 +352,14 @@ header #txtHeader #button_header .black {
   background-image: url(images/background_plat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 100px;
+}
+
+@media only screen and (max-width: 575px) {
+  .reviews {
+    padding: 50px 5%;
+  }
 }
 
 .reviews .container {
@@ -284,6 +388,31 @@ header #txtHeader #button_header .black {
   font-family: "Gentium Book Basic", serif;
 }
 
+.reviews .container .cadre_reviews p:before {
+  content: url(images/quote.png);
+  position: absolute;
+  left: -30px;
+  top: -15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .reviews .container .cadre_reviews p:before {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .reviews .container .cadre_reviews p:before {
+    left: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reviews .container .cadre_reviews p:before {
+    top: -25px;
+  }
+}
+
 .reviews .container .cadre_reviews span {
   font-size: 18px;
   font-family: "lato", "sans-serif";
@@ -294,6 +423,12 @@ header #txtHeader #button_header .black {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px;
+}
+
+@media only screen and (max-width: 575px) {
+  .reservation {
+    padding: 50px 5%;
+  }
 }
 
 .reservation .container {
@@ -313,7 +448,7 @@ header #txtHeader #button_header .black {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .reservation .container .image_reservation {
     display: none;
   }
@@ -337,6 +472,10 @@ header #txtHeader #button_header .black {
 
 .reservation .container .cadre_reservation .txt_reservation h2 {
   color: #d2a818;
+}
+
+.reservation .container .cadre_reservation .form_reservation .row {
+  width: 100%;
 }
 
 .reservation .container .cadre_reservation .form_reservation .input-group {
@@ -381,6 +520,7 @@ header #txtHeader #button_header .black {
 
 .reservation .container .cadre_reservation button {
   width: 100%;
+  margin-top: 30px;
   background-color: #d2a818;
   border: none;
   color: white;
@@ -389,9 +529,18 @@ header #txtHeader #button_header .black {
 
 footer {
   background-color: #191919;
-  padding: 100px 0;
   text-align: center;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+footer i {
+  padding: 0 10px;
+}
+
+footer span {
+  font-weight: 900;
 }
 
 footer .container {
@@ -402,5 +551,62 @@ footer .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .container .colonne {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer .container .about_us p {
+  margin: 0;
+}
+
+footer .container .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .center .payement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+}
+
+footer .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+footer .container .right .social_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

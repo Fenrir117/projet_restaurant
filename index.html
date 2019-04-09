@@ -1,17 +1,35 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Titre de la page</title>
+    <title>Lambda</title>
+    <meta name="author" content="Muller Jessy">
+    <meta name="descritpion"
+        content="Site qui presente le restaurant Lambda avec la possibilité de reserver une table.">
+    <meta name="keywords" content="restaurant, menu, signature du chef, sucré, salé, finest, quality">
+    <!--Meta facebook, Google+, Linkedin-->
+    <meta property="og:url" content="lien du site" />
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="Site vitrine du restaurant Lambda">
+    <meta property="og:title" content="Lambda" />
+    <meta property="og:description"
+        content="Site qui presente le restaurant Lambda avec la possibilité de reserver une table." />
+    <!--Meta twitter-->
+    <meta name="twitter:card" content="summary" />
+    <meta name=”twitter:creator” content="muller.jessy.pro@gmail.com" />
+    <meta name="twitter:site" content="Site vitrine du restaurant Lambda" />
+    <meta name="twitter:url" content="lien du site/" />
+    <meta name="twitter:title" content="Lambda" />
+    <meta name="twitter:description"
+        content="Site qui presente le restaurant Lambda avec la possibilité de reserver une table.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic/Lato/Yeseva+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,45 +40,47 @@
 
         <!-- Navbar avec le logo dans celle-ci -->
         <nav class="container-fluid navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo du restaurant"></a>
 
-            <!-- ************* BOUTON MOBILE *************** -->
+                <!-- ************* BOUTON MOBILE *************** -->
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-navbar"><i class="fas fa-ellipsis-v"></i></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-navbar"><i class="fas fa-ellipsis-v"></i></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingredients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-social" href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-social" href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-social" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-social" href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -69,13 +89,19 @@
             <h1>the right ingredients for the right food</h1>
             <img class="img-fluid" src="images/divider_header.png" alt="image d'une décoration" width="232" height="43">
 
-            <div id="button_header">
-                <button class="black button">
-                    BOOK A TABLE
-                </button>
-                <button class="white button">
-                    SEE THE MENU
-                </button>
+            <div class="button_header container">
+                <div class="row justify-content-center">
+                    <div class="black button col-lg-3 col-md-4 col-8">
+                        <button>
+                            BOOK A TABLE
+                        </button>
+                    </div>
+                    <div class="white button col-lg-3 col-md-4 col-8">
+                        <button>
+                            SEE THE MENU
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -85,19 +111,15 @@
         <div class="container">
             <div class="row">
                 <!-- Div avec la signature du cuisiner  -->
-                <div class="cuisinier col-lg-6">
+                <div class="cuisinier col-lg-6 ">
                     <h2>Just the right food</h2>
 
-                    <div class="divider_991 d-lg-none d-xl-none">
-                        <img src="images/divider_silver.png"
-                            alt="Décoration qui sert de séparation entre le titre et le texte." width="247">
-                    </div>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
                         enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                        <g id="Calque_2">
+                        <g class="Calque_2">
                         </g>
-                        <g id="Calque_1">
+                        <g class="Calque_1">
                             <g>
                                 <path fill="#ddc068" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
 			c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
@@ -141,15 +163,15 @@
 
     <section class=" ingredient container-fluid">
         <div class=" container">
-            <div class="cadre_ingredient col-lg-6 offset-lg-6">
+            <div class="cadre_ingredient col-lg-6 offset-lg-6 ">
                 <div class="txt_ingredient ">
                     <h2>Fine ingredients</h2>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
                         enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                        <g id="Calque_2">
+                        <g class="Calque_2">
                         </g>
-                        <g id="Calque_1">
+                        <g class="Calque_1">
                             <g>
                                 <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
                            c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
@@ -180,7 +202,7 @@
                         muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
                     </p>
                 </div>
-                <div class=" container col-lg-10">
+                <div class=" container col-lg-10 flex-xs-column">
                     <img class="img-fluid" src="images/rond_1.png" alt="Photo d'ingredients pour la cuisine">
                     <img class="img-fluid" src="images/rond_2.png" alt="Photo d'ingredients pour la cuisine">
                     <img class="img-fluid" src="images/rond_3.png" alt="Photo d'ingredients pour la cuisine">
@@ -202,13 +224,13 @@
     <section class="reviews container-fluid">
         <div class="container">
             <div class="cadre_reviews col-lg-8 offset-lg-2">
-                <h2>Guest reviews</h2>
+                <h2>Guest Reviews</h2>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
                     enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                    <g id="Calque_2">
+                    <g class="Calque_2">
                     </g>
-                    <g id="Calque_1">
+                    <g class="Calque_1">
                         <g>
                             <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
                        c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
@@ -250,24 +272,25 @@
     <section class="reservation container-fluid">
         <div class="container">
             <div class="row">
-                <div class=" image_reservation col-lg-3  col-md-5">
+                <div class=" image_reservation col-xl-3 col-lg-3 offset-sm-1 col-sm-5 col-md-4">
                     <img class="img-fluid" src="images/image_reservation_2.jpg" alt="photo d'un plat sucré">
 
                 </div>
 
-                <div class="image_reservation col-lg-3 col-md-5 ">
+                <div class="image_reservation col-xl-3 col-lg-3 col-sm-5 col-md-4">
                     <img class="  img-fluid" src="images/image_reservation.jpg" alt="photo d'un plat salé">
 
                 </div>
-                <div class=" offset-lg-1 col-lg-5  col-md-10 d-flex flex-column justify-content-around cadre_reservation">
+                <div
+                    class=" offset-lg-2 col-lg-8 offset-xl-1 col-xl-4  offset-md-1 col-md-10 d-flex flex-column justify-content-around cadre_reservation">
                     <div class="txt_reservation d-flex flex-column justify-content-between">
                         <h2>Just the right food</h2>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
                             enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                            <g id="Calque_2">
+                            <g class="Calque_2">
                             </g>
-                            <g id="Calque_1">
+                            <g class="Calque_1">
                                 <g>
                                     <path fill="#ddc068" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
                                c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
@@ -303,20 +326,20 @@
                         <form class="container d-flex flex-column">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <label for="">Name</label>
-                                    <input type="text" class="form-control" placeholder="your name *">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="your name *">
                                 </div>
                                 <div class="col-lg-6">
-                                    <label for="">Name</label>
-                                    <input type="text" class="form-control" placeholder="your email *">
+                                    <label for="email">Name</label>
+                                    <input type="text" id="email" class="form-control" placeholder="your email *">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
 
                                     <div class="input-group date" id="datetimepicker9" data-target-input="nearest">
-                                        <label for="">Date</label>
-                                        <input type="text" class="form-control datetimepicker-input"
+                                        <label for="date">Date</label>
+                                        <input type="text" id="date" class="form-control datetimepicker-input"
                                             data-target="#datetimepicker9" placeholder="date *" />
 
                                         <div class="input-group-append" data-target="#datetimepicker9"
@@ -328,46 +351,42 @@
 
 
                                 <div class="col-lg-6">
-                                    
-                                        <label for="">Party number</label>
-                                        <select name="cars">
-                                            <option hidden>party-number</option>
-                                            <option value="0"></option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                        </select>
-                                    
-</div>
+
+                                    <label for="party_number">Party number</label>
+                                    <select id="party_number" name="cars">
+                                        <option hidden>party-number</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+
                                 </div>
-                     
-<div class="offset-lg-4 col-lg-4 bouton_form">
-                     <button> Book now! </button>
-                    </div>
-                    </form>       </div> 
-                    </div>
+                            </div>
 
-
-      
+                            <div class=" col-lg-6 bouton_form">
+                                <button> Book now! </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
+    
 
     </section>
 
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="about_us col-lg-4">
+                <div class="colonne about_us col-4">
                     <h3>About Us</h3>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
                         enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                        <g id="Calque_2">
+                        <g class="Calque_2">
                         </g>
-                        <g id="Calque_1">
+                        <g class="Calque_1">
                             <g>
                                 <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
 			c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
@@ -392,27 +411,28 @@
                     </svg>
 
                     <p>
-                        Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie,
-                        featuring breakfasts of fresh croissants and steaming bowls of café.
-                        Lamda the best restaurant in town
+                        Lambda's new and expanded Chelsea location represents a truly authentic <strong>Greek</strong> patisserie,
+                        featuring breakfasts of fresh croissants and steaming bowls of café. <br>
+                        
                     </p>
-
+<span> Lamda the best restaurant in town</span>
                 </div>
-                <div class="openning offset-lg-1 col-lg-2">
-                    <h3>Openning Hours</h3>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
-                        enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                        <g id="Calque_2">
-                        </g>
-                        <g id="Calque_1">
-                            <g>
-                                <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
+                <div class="colonne center offset-lg-1 col-3">
+                    <div class="openning">
+                        <h3>Openning Hours</h3>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
+                            enable-background="new 0 0 628.711 58.112" xml:space="preserve">
+                            <g class="Calque_2">
+                            </g>
+                            <g class="Calque_1">
+                                <g>
+                                    <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
 			c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
-                                <path fill="#919191" d="M477.653,35.98l151.058,2l-151.058,2c-1.104,0.015-2.012-0.869-2.025-1.974
+                                    <path fill="#919191" d="M477.653,35.98l151.058,2l-151.058,2c-1.104,0.015-2.012-0.869-2.025-1.974
 			c-0.016-1.104,0.867-2.012,1.973-2.026C477.615,35.98,477.64,35.98,477.653,35.98" />
-                                <path fill="none" stroke="#919191" stroke-width="4" stroke-linecap="round"
-                                    stroke-miterlimit="10" d="M151.057,37.98
+                                    <path fill="none" stroke="#919191" stroke-width="4" stroke-linecap="round"
+                                        stroke-miterlimit="10" d="M151.057,37.98
 			l88.978,0.004c1.061,0,2.079-0.423,2.829-1.173l11.523-11.522c1.562-1.562,4.095-1.562,5.657,0l29.652,29.652
 			c1.562,1.562,4.095,1.562,5.657,0l14.843-14.844c1.562-1.563,1.562-4.095,0-5.656l-9.478-9.479c-1.562-1.562-4.094-1.562-5.656,0
 			l-8.844,8.843c-1.562,1.563-1.562,4.096,0,5.657l2.645,2.645c1.562,1.562,4.094,1.562,5.657,0l2.831-2.831
@@ -425,30 +445,41 @@
 			c1.562,1.562,4.095,1.562,5.656,0l2.645-2.645c1.562-1.562,1.562-4.095,0-5.657l-8.843-8.843c-1.563-1.562-4.096-1.562-5.657,0
 			l-9.479,9.479c-1.562,1.562-1.562,4.094,0,5.656l14.845,14.844c1.562,1.562,4.094,1.562,5.655,0l29.652-29.652
 			c1.563-1.562,4.095-1.562,5.657,0l11.522,11.522c0.751,0.75,1.769,1.173,2.829,1.173l88.979-0.004" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
 
-                    <p>
-                        Mon-Thu: 7:00am-8:00pm
-                        Fri-Sun: 7:00am-10:00pm
-                    </p>
+                        <ul>
+                            <li><span>Mon-Thu:</span> 7:00am-8:00pm</li>
+                            <li><span>Fri-Sun:</span> 7:00am-10:00pm</li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="payement">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-amex"></i>
+                    </div>
                 </div>
-                <div class="location offset-lg-2 col-lg-2">
-                    <h3>Our Location</h3>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
-                        enable-background="new 0 0 628.711 58.112" xml:space="preserve">
-                        <g id="Calque_2">
-                        </g>
-                        <g id="Calque_1">
-                            <g>
-                                <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
+                <div class="colonne right offset-lg-1 col-3">
+                    <div class="location">
+                        <h3>Our Location</h3>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="628.711px" height="58.112px" viewBox="0 0 628.711 58.112"
+                            enable-background="new 0 0 628.711 58.112" xml:space="preserve">
+                            <g class="Calque_2">
+                            </g>
+                            <g class="Calque_1">
+                                <g>
+                                    <path fill="#919191" d="M151.057,39.98L0,37.98l151.057-2c1.105-0.016,2.012,0.868,2.026,1.974
 			c0.015,1.104-0.868,2.011-1.973,2.026C151.095,39.98,151.071,39.98,151.057,39.98" />
-                                <path fill="#919191" d="M477.653,35.98l151.058,2l-151.058,2c-1.104,0.015-2.012-0.869-2.025-1.974
+                                    <path fill="#919191" d="M477.653,35.98l151.058,2l-151.058,2c-1.104,0.015-2.012-0.869-2.025-1.974
 			c-0.016-1.104,0.867-2.012,1.973-2.026C477.615,35.98,477.64,35.98,477.653,35.98" />
-                                <path fill="none" stroke="#919191" stroke-width="4" stroke-linecap="round"
-                                    stroke-miterlimit="10" d="M151.057,37.98
+                                    <path fill="none" stroke="#919191" stroke-width="4" stroke-linecap="round"
+                                        stroke-miterlimit="10" d="M151.057,37.98
 			l88.978,0.004c1.061,0,2.079-0.423,2.829-1.173l11.523-11.522c1.562-1.562,4.095-1.562,5.657,0l29.652,29.652
 			c1.562,1.562,4.095,1.562,5.657,0l14.843-14.844c1.562-1.563,1.562-4.095,0-5.656l-9.478-9.479c-1.562-1.562-4.094-1.562-5.656,0
 			l-8.844,8.843c-1.562,1.563-1.562,4.096,0,5.657l2.645,2.645c1.562,1.562,4.094,1.562,5.657,0l2.831-2.831
@@ -461,20 +492,29 @@
 			c1.562,1.562,4.095,1.562,5.656,0l2.645-2.645c1.562-1.562,1.562-4.095,0-5.657l-8.843-8.843c-1.563-1.562-4.096-1.562-5.657,0
 			l-9.479,9.479c-1.562,1.562-1.562,4.094,0,5.656l14.845,14.844c1.562,1.562,4.094,1.562,5.655,0l29.652-29.652
 			c1.563-1.562,4.095-1.562,5.657,0l11.522,11.522c0.751,0.75,1.769,1.173,2.829,1.173l88.979-0.004" />
+                                </g>
                             </g>
-                        </g>
-                    </svg>
+                        </svg>
 
-                    <p>
-                        19th Paradise Street Sitia
-                        128 Meserole Avenue
-                    </p>
+                        <p>
+                            19th Paradise Street Sitia
+                            128 Meserole Avenue
+                        </p>
+                      
+                    </div>  <div class="social_footer">
+
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+
+                        </div>
                 </div>
             </div>
         </div>
 
     </footer>
-    <script type="text/javascript">
+    <script>
         $(function () {
             $('#datetimepicker9').datetimepicker({
                 icons: {
@@ -491,10 +531,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Script pour le datepicker -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
 </body>
